@@ -20,9 +20,8 @@ st.title("Symptom-Diagnosis using MultinomialNB")
 st.write("Select your symptoms and click Predict to find out the disease.")
 
 st.subheader("Select Symptoms:")
-display = st.multiselect("Choose your symptoms", display)
-selected = [symptoms[display.index(s)] for s in display]
-
+selected_display = st.multiselect("Choose your symptoms", display)
+selected = [symptoms[display.index(s)] for s in selected_display]
 if st.button("Predict"):
     if len(selected) == 0:
         st.warning("⚠️ Please select at least one symptom!")
