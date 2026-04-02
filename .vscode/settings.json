@@ -5,6 +5,7 @@
         "matplotlib",
         "Multinomial",
         "scikit",
-        "seaborn"
+        "seaborn",
+        "Streamlit"
     ]
 }
