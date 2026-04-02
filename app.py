@@ -16,7 +16,7 @@ model.fit(X_train, y_train)
 symptoms = X_train.columns.tolist()
 display = [s.replace('_', ' ').title() for s in symptoms]
 
-st.title("Symptom-Diagnosis Predictor using multinomial Naive Bayes Model")
+st.title("Symptom-Diagnosis using MultinomialNB")
 st.write("Select your symptoms and click Predict to find out the disease.")
 
 st.subheader("Select Symptoms:")
